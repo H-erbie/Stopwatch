@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: coral;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.app_container{
+    text-align: center;
+    width: max-content;
+    margin: 10rem auto;
+}
+.title{
+    color: white;
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+.readings{
+    margin: 3rem 0;
+    font-size: 2rem;
+    color: white;
+}
+.buttons{
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    gap: 5rem;
+    font-size: 2rem;
+}
+.buttons > div{
+    background-color: lightgray;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: coral;
+    border: 1px solid transparent;
+    transition: 0.5s ease-out;
+}
+.buttons > div:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-color: lightgray;
+}
+@media  (max-width: 640px) {
+ .title h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.9rem;
+    
+ }
+ .buttons{
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+.buttons > div{
+    background-color: lightgray;
+    padding: 0.5rem 1rem;
+}
+
+}
